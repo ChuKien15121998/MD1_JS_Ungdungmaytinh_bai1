@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<input type="number" id="st1">
+<input type="number" id="st2">
+<br><br>
+<div>
+    <button onclick="tinhtong()">Addition(+)</button>
+    <button onclick="tinhtru()">Subtraction(-)</button>
+    <button onclick="tinhnhan()">Multiplication(*)</button>
+    <button onclick="tinhchia()">Division(/)</button>
+</div>
+
+<script>
+    function tinhtong() {
+        let a = +document.getElementById("st1").value;
+        let b = +document.getElementById("st2").value;
+        document.getElementById("rs").innerHTML = 'Kết quả là: ' +(a+b);
+    }
+    function tinhtru() {
+        let a = +document.getElementById("st1").value;
+        let b = +document.getElementById("st2").value;
+        document.getElementById("rs").innerHTML = 'Kết quả là: ' +(a-b);
+    }
+    function tinhnhan() {
+        let a = +document.getElementById("st1").value;
+        let b = +document.getElementById("st2").value;
+        document.getElementById("rs").innerHTML = 'Kết quả là: ' +(a*b);
+    }
+    function tinhchia() {
+        let a = +document.getElementById("st1").value;
+        let b = +document.getElementById("st2").value;
+        document.getElementById("rs").innerHTML = 'Kết quả là: ' + (a/b);
+    }
+</script>
+<p id="rs"></p>
+</body>
+</html>
